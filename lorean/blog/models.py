@@ -24,11 +24,3 @@ class Post(models.Model):
 		return self.title
 
 
-class Category(models.Model):
-	name = models.CharField(max_length = 250)
-	slug = models.SlugField(max_length = 250 )
-
-	def __str__(self):
-		return self.name
-
-
