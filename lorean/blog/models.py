@@ -32,11 +32,3 @@ class Category(models.Model):
 		return self.name
 
 
-class Status(models.Model):
-	name = models.CharField(max_length = 250)
-	slug = models.SlugField(max_length = 250 , unique_for_date = 'Status')
-	created = models.DateTimeField(auto_now_add = True)
-
-	def __str__(self):
-		return self.name
-			
