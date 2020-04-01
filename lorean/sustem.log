@@ -20065,3 +20065,674 @@ Wed Apr  1 15:03:48 2020 - uwsgi_response_writev_headers_and_body_do(): Broken p
 OSError: write error
 [pid: 2371|app: 0|req: 2/2] 127.0.0.1 () {40 vars in 682 bytes} [Wed Apr  1 15:03:48 2020] GET /favicon.ico => generated 0 bytes in 4 msecs (HTTP/1.1 404) 4 headers in 0 bytes (0 switches on core 0)
 [pid: 2371|app: 0|req: 3/3] 127.0.0.1 () {44 vars in 805 bytes} [Wed Apr  1 15:03:56 2020] GET /video/ => generated 1002 bytes in 4 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 2371|app: 0|req: 4/4] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:12:28 2020] GET /video/ => generated 1056 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 2371|app: 0|req: 5/5] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:14:31 2020] GET /video/ => generated 1056 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 2371|app: 0|req: 6/6] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:14:32 2020] GET /video/ => generated 1056 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 2371|app: 0|req: 7/7] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:14:33 2020] GET /video/ => generated 1056 bytes in 7 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 2371|app: 0|req: 8/8] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:14:33 2020] GET /video/ => generated 1056 bytes in 3 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 2371|app: 0|req: 9/9] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:14:33 2020] GET /video/ => generated 1056 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 2371|app: 0|req: 10/10] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:14:33 2020] GET /video/ => generated 1056 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 2371|app: 0|req: 11/11] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:14:33 2020] GET /video/ => generated 1056 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 2371|app: 0|req: 12/12] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:14:34 2020] GET /video/ => generated 1056 bytes in 3 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 2371|app: 0|req: 13/13] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:14:34 2020] GET /video/ => generated 1056 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 2371|app: 0|req: 14/14] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:14:34 2020] GET /video/ => generated 1056 bytes in 4 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 2371|app: 0|req: 15/15] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:14:34 2020] GET /video/ => generated 1056 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 2371|app: 0|req: 16/16] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:14:35 2020] GET /video/ => generated 1056 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 2371|app: 0|req: 17/17] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:14:35 2020] GET /video/ => generated 1056 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 2371|app: 0|req: 18/18] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:14:36 2020] GET /video/ => generated 1056 bytes in 3 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+Internal Server Error: /video/
+Traceback (most recent call last):
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./blog/views.py", line 7, in video
+    return render(request , 'blog/video.html')
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/base.py", line 477, in parse
+    raise self.error(token, e)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/base.py", line 475, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/loader_tags.py", line 266, in do_extends
+    nodelist = parser.parse()
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/base.py", line 477, in parse
+    raise self.error(token, e)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/base.py", line 475, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/loader_tags.py", line 209, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/base.py", line 482, in parse
+    self.unclosed_block_tag(parse_until)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/base.py", line 543, in unclosed_block_tag
+    raise self.error(token, msg)
+django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 17: 'block'. Looking for one of: endblock.
+[pid: 2371|app: 0|req: 19/19] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:16:00 2020] GET /video/ => generated 139405 bytes in 60 msecs (HTTP/1.1 500) 5 headers in 157 bytes (1 switches on core 0)
+Internal Server Error: /video/
+Traceback (most recent call last):
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./blog/views.py", line 7, in video
+    return render(request , 'blog/video.html')
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/base.py", line 477, in parse
+    raise self.error(token, e)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/base.py", line 475, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/loader_tags.py", line 266, in do_extends
+    nodelist = parser.parse()
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/base.py", line 477, in parse
+    raise self.error(token, e)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/base.py", line 475, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/loader_tags.py", line 209, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/base.py", line 482, in parse
+    self.unclosed_block_tag(parse_until)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/base.py", line 543, in unclosed_block_tag
+    raise self.error(token, msg)
+django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 17: 'block'. Looking for one of: endblock.
+[pid: 2371|app: 0|req: 20/20] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:16:01 2020] GET /video/ => generated 139405 bytes in 55 msecs (HTTP/1.1 500) 5 headers in 157 bytes (1 switches on core 0)
+Internal Server Error: /video/
+Traceback (most recent call last):
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./blog/views.py", line 7, in video
+    return render(request , 'blog/video.html')
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/base.py", line 477, in parse
+    raise self.error(token, e)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/base.py", line 475, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/loader_tags.py", line 266, in do_extends
+    nodelist = parser.parse()
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/base.py", line 477, in parse
+    raise self.error(token, e)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/base.py", line 475, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/loader_tags.py", line 209, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/base.py", line 482, in parse
+    self.unclosed_block_tag(parse_until)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/base.py", line 543, in unclosed_block_tag
+    raise self.error(token, msg)
+django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 17: 'block'. Looking for one of: endblock.
+[pid: 2371|app: 0|req: 21/21] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:16:02 2020] GET /video/ => generated 139405 bytes in 48 msecs (HTTP/1.1 500) 5 headers in 157 bytes (1 switches on core 0)
+Internal Server Error: /video/
+Traceback (most recent call last):
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./blog/views.py", line 7, in video
+    return render(request , 'blog/video.html')
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/base.py", line 477, in parse
+    raise self.error(token, e)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/base.py", line 475, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/loader_tags.py", line 266, in do_extends
+    nodelist = parser.parse()
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/base.py", line 477, in parse
+    raise self.error(token, e)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/base.py", line 475, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/loader_tags.py", line 209, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/base.py", line 482, in parse
+    self.unclosed_block_tag(parse_until)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/base.py", line 543, in unclosed_block_tag
+    raise self.error(token, msg)
+django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 17: 'block'. Looking for one of: endblock.
+[pid: 2371|app: 0|req: 22/22] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:16:02 2020] GET /video/ => generated 139405 bytes in 46 msecs (HTTP/1.1 500) 5 headers in 157 bytes (1 switches on core 0)
+Internal Server Error: /video/
+Traceback (most recent call last):
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./blog/views.py", line 7, in video
+    return render(request , 'blog/video.html')
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/base.py", line 477, in parse
+    raise self.error(token, e)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/base.py", line 475, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/loader_tags.py", line 266, in do_extends
+    nodelist = parser.parse()
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/base.py", line 477, in parse
+    raise self.error(token, e)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/base.py", line 475, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/loader_tags.py", line 209, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/base.py", line 482, in parse
+    self.unclosed_block_tag(parse_until)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/base.py", line 543, in unclosed_block_tag
+    raise self.error(token, msg)
+django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 17: 'block'. Looking for one of: endblock.
+[pid: 2371|app: 0|req: 23/23] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:16:03 2020] GET /video/ => generated 139405 bytes in 47 msecs (HTTP/1.1 500) 5 headers in 157 bytes (1 switches on core 0)
+Internal Server Error: /video/
+Traceback (most recent call last):
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./blog/views.py", line 7, in video
+    return render(request , 'blog/video.html')
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/base.py", line 477, in parse
+    raise self.error(token, e)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/base.py", line 475, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/loader_tags.py", line 266, in do_extends
+    nodelist = parser.parse()
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/base.py", line 477, in parse
+    raise self.error(token, e)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/base.py", line 475, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/loader_tags.py", line 209, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/base.py", line 482, in parse
+    self.unclosed_block_tag(parse_until)
+  File "/home/programmer/Project/venv/lib/python3.6/site-packages/django/template/base.py", line 543, in unclosed_block_tag
+    raise self.error(token, msg)
+django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 17: 'block'. Looking for one of: endblock.
+[pid: 2371|app: 0|req: 24/24] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:16:03 2020] GET /video/ => generated 139405 bytes in 54 msecs (HTTP/1.1 500) 5 headers in 157 bytes (1 switches on core 0)
+[pid: 2371|app: 0|req: 25/25] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:16:32 2020] GET /video/ => generated 1097 bytes in 6 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 2371|app: 0|req: 26/26] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:16:36 2020] GET /video/ => generated 1097 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 2371|app: 0|req: 27/27] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:16:36 2020] GET /video/ => generated 1097 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 2371|app: 0|req: 28/28] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:17:02 2020] GET /video/ => generated 1097 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 2371|app: 0|req: 29/29] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:17:03 2020] GET /video/ => generated 1097 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 2371|app: 0|req: 30/30] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:17:04 2020] GET /video/ => generated 1097 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 2371|app: 0|req: 31/31] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:17:04 2020] GET /video/ => generated 1097 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 2371|app: 0|req: 32/32] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:17:04 2020] GET /video/ => generated 1097 bytes in 3 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 2371|app: 0|req: 33/33] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:17:04 2020] GET /video/ => generated 1097 bytes in 3 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 2371|app: 0|req: 34/34] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:17:04 2020] GET /video/ => generated 1097 bytes in 3 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 2371|app: 0|req: 35/35] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:17:05 2020] GET /video/ => generated 1097 bytes in 3 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Apr  1 18:17:15 2020] ***
+compiled with version: 7.3.0 on 23 February 2020 19:22:36
+os: Linux-4.15.0-20-generic #21-Ubuntu SMP Tue Apr 24 06:16:15 UTC 2018
+nodename: programmer-G56JR
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /home/programmer/Project/lorean
+detected binary path: /home/programmer/Project/venv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 47173
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /tmp/lorean.sock fd 3
+Python version: 3.6.8 (default, Oct  7 2019, 12:59:55)  [GCC 8.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x5625b50f5830
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72904 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x5625b50f5830 pid: 4155 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 4155, cores: 1)
+[pid: 4155|app: 0|req: 1/1] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:17:18 2020] GET /video/ => generated 1097 bytes in 24 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4155|app: 0|req: 2/2] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:17:18 2020] GET /video/ => generated 1097 bytes in 4 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4155|app: 0|req: 3/3] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:17:19 2020] GET /video/ => generated 1097 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4155|app: 0|req: 4/4] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:17:19 2020] GET /video/ => generated 1097 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4155|app: 0|req: 5/5] 127.0.0.1 () {44 vars in 805 bytes} [Wed Apr  1 15:28:50 2020] GET /video/ => generated 1097 bytes in 4 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4155|app: 0|req: 6/6] 127.0.0.1 () {44 vars in 803 bytes} [Wed Apr  1 15:28:58 2020] GET /foto/ => generated 1068 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4155|app: 0|req: 7/7] 127.0.0.1 () {46 vars in 834 bytes} [Wed Apr  1 15:30:00 2020] GET /foto/ => generated 1068 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4155|app: 0|req: 8/8] 127.0.0.1 () {44 vars in 805 bytes} [Wed Apr  1 15:30:07 2020] GET /video/ => generated 1097 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4155|app: 0|req: 9/9] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:30:24 2020] GET /video/ => generated 1097 bytes in 3 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4155|app: 0|req: 10/10] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:30:53 2020] GET /video/ => generated 1097 bytes in 3 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4155|app: 0|req: 11/11] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:30:57 2020] GET /video/ => generated 1097 bytes in 3 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4155|app: 0|req: 12/12] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:30:57 2020] GET /video/ => generated 1097 bytes in 4 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4155|app: 0|req: 13/13] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:35:28 2020] GET /video/ => generated 1467 bytes in 7 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4155|app: 0|req: 14/14] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:35:53 2020] GET /video/ => generated 1467 bytes in 3 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4155|app: 0|req: 15/15] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:35:54 2020] GET /video/ => generated 1467 bytes in 4 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4155|app: 0|req: 16/16] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:35:55 2020] GET /video/ => generated 1467 bytes in 3 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4155|app: 0|req: 17/17] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:35:55 2020] GET /video/ => generated 1467 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4155|app: 0|req: 18/18] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:35:58 2020] GET /video/ => generated 1467 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4155|app: 0|req: 19/19] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:35:59 2020] GET /video/ => generated 1467 bytes in 4 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4155|app: 0|req: 20/20] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:35:59 2020] GET /video/ => generated 1467 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4155|app: 0|req: 21/21] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:35:59 2020] GET /video/ => generated 1467 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4155|app: 0|req: 22/22] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:35:59 2020] GET /video/ => generated 1467 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4155|app: 0|req: 23/23] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:36:00 2020] GET /video/ => generated 1467 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4155|app: 0|req: 24/24] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:36:00 2020] GET /video/ => generated 1467 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4155|app: 0|req: 25/25] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:36:00 2020] GET /video/ => generated 1467 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4155|app: 0|req: 26/26] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:36:00 2020] GET /video/ => generated 1467 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4155|app: 0|req: 27/27] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:36:00 2020] GET /video/ => generated 1467 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4155|app: 0|req: 28/28] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:36:01 2020] GET /video/ => generated 1467 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4155|app: 0|req: 29/29] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:36:01 2020] GET /video/ => generated 1467 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4155|app: 0|req: 30/30] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:36:01 2020] GET /video/ => generated 1467 bytes in 4 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4155|app: 0|req: 31/31] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:36:01 2020] GET /video/ => generated 1467 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4155|app: 0|req: 32/32] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:36:02 2020] GET /video/ => generated 1467 bytes in 3 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4155|app: 0|req: 33/33] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:36:02 2020] GET /video/ => generated 1467 bytes in 4 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4155|app: 0|req: 34/34] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:36:02 2020] GET /video/ => generated 1467 bytes in 3 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4155|app: 0|req: 35/35] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:36:12 2020] GET /video/ => generated 1467 bytes in 4 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4155|app: 0|req: 36/36] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:36:13 2020] GET /video/ => generated 1467 bytes in 4 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4155|app: 0|req: 37/37] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:36:13 2020] GET /video/ => generated 1467 bytes in 3 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4155|app: 0|req: 38/38] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:36:13 2020] GET /video/ => generated 1467 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4155|app: 0|req: 39/39] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:36:14 2020] GET /video/ => generated 1467 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4155|app: 0|req: 40/40] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:36:14 2020] GET /video/ => generated 1467 bytes in 4 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4155|app: 0|req: 41/41] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:36:16 2020] GET /video/ => generated 1467 bytes in 3 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4155|app: 0|req: 42/42] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:36:17 2020] GET /video/ => generated 1467 bytes in 3 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4155|app: 0|req: 43/43] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:36:17 2020] GET /video/ => generated 1467 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4155|app: 0|req: 44/44] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:36:18 2020] GET /video/ => generated 1467 bytes in 3 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Apr  1 18:36:23 2020] ***
+compiled with version: 7.3.0 on 23 February 2020 19:22:36
+os: Linux-4.15.0-20-generic #21-Ubuntu SMP Tue Apr 24 06:16:15 UTC 2018
+nodename: programmer-G56JR
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /home/programmer/Project/lorean
+detected binary path: /home/programmer/Project/venv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 47173
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /tmp/lorean.sock fd 3
+Python version: 3.6.8 (default, Oct  7 2019, 12:59:55)  [GCC 8.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x562a2bbc8830
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72904 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x562a2bbc8830 pid: 4788 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 4788, cores: 1)
+[pid: 4788|app: 0|req: 1/1] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:36:27 2020] GET /video/ => generated 1467 bytes in 25 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4788|app: 0|req: 2/2] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:36:27 2020] GET /video/ => generated 1467 bytes in 3 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4788|app: 0|req: 3/3] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:36:28 2020] GET /video/ => generated 1467 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4788|app: 0|req: 4/4] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:36:28 2020] GET /video/ => generated 1467 bytes in 4 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4788|app: 0|req: 5/5] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:36:40 2020] GET /video/ => generated 1467 bytes in 3 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4788|app: 0|req: 6/6] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:36:41 2020] GET /video/ => generated 1467 bytes in 4 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4788|app: 0|req: 7/7] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:36:42 2020] GET /video/ => generated 1467 bytes in 4 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4788|app: 0|req: 8/8] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:36:42 2020] GET /video/ => generated 1467 bytes in 4 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4788|app: 0|req: 9/9] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:36:42 2020] GET /video/ => generated 1467 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4788|app: 0|req: 10/10] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:36:43 2020] GET /video/ => generated 1467 bytes in 3 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4788|app: 0|req: 11/11] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:36:43 2020] GET /video/ => generated 1467 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4788|app: 0|req: 12/12] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:36:43 2020] GET /video/ => generated 1467 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4788|app: 0|req: 13/13] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:36:43 2020] GET /video/ => generated 1467 bytes in 3 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4788|app: 0|req: 14/14] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:36:43 2020] GET /video/ => generated 1467 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4788|app: 0|req: 15/15] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:36:44 2020] GET /video/ => generated 1467 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4788|app: 0|req: 16/16] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:36:53 2020] GET /video/ => generated 1467 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4788|app: 0|req: 17/17] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:37:10 2020] GET /video/ => generated 1467 bytes in 3 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4788|app: 0|req: 18/18] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:38:22 2020] GET /video/ => generated 1467 bytes in 3 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4788|app: 0|req: 19/19] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:39:11 2020] GET /video/ => generated 1467 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4788|app: 0|req: 20/20] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:39:26 2020] GET /video/ => generated 1467 bytes in 4 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4788|app: 0|req: 21/21] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:39:43 2020] GET /video/ => generated 1467 bytes in 13 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4788|app: 0|req: 22/22] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:39:44 2020] GET /video/ => generated 1467 bytes in 3 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4788|app: 0|req: 23/23] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:39:45 2020] GET /video/ => generated 1467 bytes in 6 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4788|app: 0|req: 24/24] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:39:51 2020] GET /video/ => generated 1467 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4788|app: 0|req: 25/25] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:39:52 2020] GET /video/ => generated 1467 bytes in 7 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4788|app: 0|req: 26/26] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:39:53 2020] GET /video/ => generated 1467 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4788|app: 0|req: 27/27] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:39:54 2020] GET /video/ => generated 1467 bytes in 7 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4788|app: 0|req: 28/28] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:40:05 2020] GET /video/ => generated 1467 bytes in 4 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4788|app: 0|req: 29/29] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:40:23 2020] GET /video/ => generated 1467 bytes in 4 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4788|app: 0|req: 30/30] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:40:47 2020] GET /video/ => generated 1467 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4788|app: 0|req: 31/31] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:41:03 2020] GET /video/ => generated 1467 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4788|app: 0|req: 32/32] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:41:04 2020] GET /video/ => generated 1467 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4788|app: 0|req: 33/33] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:41:07 2020] GET /video/ => generated 1467 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4788|app: 0|req: 34/34] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:41:16 2020] GET /video/ => generated 1467 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4788|app: 0|req: 35/35] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:41:37 2020] GET /video/ => generated 1467 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4788|app: 0|req: 36/36] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:42:08 2020] GET /video/ => generated 1467 bytes in 4 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4788|app: 0|req: 37/37] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:42:17 2020] GET /video/ => generated 1467 bytes in 3 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4788|app: 0|req: 38/38] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:42:27 2020] GET /video/ => generated 1467 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4788|app: 0|req: 39/39] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:42:43 2020] GET /video/ => generated 1467 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4788|app: 0|req: 40/40] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:43:06 2020] GET /video/ => generated 1467 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4788|app: 0|req: 41/41] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:43:22 2020] GET /video/ => generated 1467 bytes in 4 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4788|app: 0|req: 42/42] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:43:44 2020] GET /video/ => generated 1467 bytes in 4 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4788|app: 0|req: 43/43] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:44:03 2020] GET /video/ => generated 1467 bytes in 3 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4788|app: 0|req: 44/44] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:44:17 2020] GET /video/ => generated 1467 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4788|app: 0|req: 45/45] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:44:18 2020] GET /video/ => generated 1467 bytes in 3 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4788|app: 0|req: 46/46] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:44:25 2020] GET /video/ => generated 1467 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4788|app: 0|req: 47/47] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:44:35 2020] GET /video/ => generated 1467 bytes in 3 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4788|app: 0|req: 48/48] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:45:01 2020] GET /video/ => generated 1579 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4788|app: 0|req: 49/49] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:45:12 2020] GET /video/ => generated 1544 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4788|app: 0|req: 50/50] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:46:33 2020] GET /video/ => generated 1544 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4788|app: 0|req: 51/51] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:51:05 2020] GET /video/ => generated 1748 bytes in 3 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 4788|app: 0|req: 52/52] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:51:24 2020] GET /video/ => generated 1750 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+Wed Apr  1 15:51:24 2020 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /favicon.ico (ip 127.0.0.1) !!!
+Wed Apr  1 15:51:24 2020 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /favicon.ico (127.0.0.1)
+OSError: write error
+[pid: 4788|app: 0|req: 53/53] 127.0.0.1 () {42 vars in 713 bytes} [Wed Apr  1 15:51:24 2020] GET /favicon.ico => generated 0 bytes in 6 msecs (HTTP/1.1 404) 4 headers in 0 bytes (0 switches on core 0)
+[pid: 4788|app: 0|req: 54/54] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:51:26 2020] GET /video/ => generated 1750 bytes in 3 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Apr  1 18:51:48 2020] ***
+compiled with version: 7.3.0 on 23 February 2020 19:22:36
+os: Linux-4.15.0-20-generic #21-Ubuntu SMP Tue Apr 24 06:16:15 UTC 2018
+nodename: programmer-G56JR
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /home/programmer/Project/lorean
+detected binary path: /home/programmer/Project/venv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 47173
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /tmp/lorean.sock fd 3
+Python version: 3.6.8 (default, Oct  7 2019, 12:59:55)  [GCC 8.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55c9a7536830
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72904 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55c9a7536830 pid: 6014 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 6014, cores: 1)
+[pid: 6014|app: 0|req: 1/1] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:52:02 2020] GET /video/ => generated 1750 bytes in 27 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 6014|app: 0|req: 2/2] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:52:24 2020] GET /video/ => generated 1750 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 6014|app: 0|req: 3/3] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:52:41 2020] GET /video/ => generated 1750 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 6014|app: 0|req: 4/4] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:53:12 2020] GET /video/ => generated 1750 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 6014|app: 0|req: 5/5] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:53:23 2020] GET /video/ => generated 1752 bytes in 3 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 6014|app: 0|req: 6/6] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:53:37 2020] GET /video/ => generated 1752 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 6014|app: 0|req: 7/7] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:53:44 2020] GET /video/ => generated 1752 bytes in 4 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+Wed Apr  1 15:53:44 2020 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /favicon.ico (ip 127.0.0.1) !!!
+Wed Apr  1 15:53:44 2020 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /favicon.ico (127.0.0.1)
+OSError: write error
+[pid: 6014|app: 0|req: 8/8] 127.0.0.1 () {42 vars in 713 bytes} [Wed Apr  1 15:53:44 2020] GET /favicon.ico => generated 0 bytes in 3 msecs (HTTP/1.1 404) 4 headers in 0 bytes (0 switches on core 0)
+[pid: 6014|app: 0|req: 9/9] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:54:35 2020] GET /video/ => generated 1771 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 6014|app: 0|req: 10/10] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:54:37 2020] GET /video/ => generated 1771 bytes in 6 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 6014|app: 0|req: 11/11] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:54:48 2020] GET /video/ => generated 1771 bytes in 4 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 6014|app: 0|req: 12/12] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:55:15 2020] GET /video/ => generated 1771 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+Wed Apr  1 15:55:15 2020 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /favicon.ico (ip 127.0.0.1) !!!
+Wed Apr  1 15:55:15 2020 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /favicon.ico (127.0.0.1)
+OSError: write error
+[pid: 6014|app: 0|req: 13/13] 127.0.0.1 () {42 vars in 713 bytes} [Wed Apr  1 15:55:15 2020] GET /favicon.ico => generated 0 bytes in 5 msecs (HTTP/1.1 404) 4 headers in 0 bytes (0 switches on core 0)
+[pid: 6014|app: 0|req: 14/14] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:55:37 2020] GET /video/ => generated 1771 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 6014|app: 0|req: 15/15] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:55:38 2020] GET /video/ => generated 1771 bytes in 4 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 6014|app: 0|req: 16/16] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:55:41 2020] GET /video/ => generated 1771 bytes in 4 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 6014|app: 0|req: 17/17] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:56:11 2020] GET /video/ => generated 1771 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 6014|app: 0|req: 18/18] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:56:54 2020] GET /video/ => generated 1771 bytes in 6 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 6014|app: 0|req: 19/19] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:56:56 2020] GET /video/ => generated 1771 bytes in 3 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 6014|app: 0|req: 20/20] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:57:17 2020] GET /video/ => generated 1771 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 6014|app: 0|req: 21/21] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:57:19 2020] GET /video/ => generated 1771 bytes in 4 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 6014|app: 0|req: 22/22] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:57:31 2020] GET /video/ => generated 1771 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 6014|app: 0|req: 23/23] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:57:40 2020] GET /video/ => generated 1771 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 6014|app: 0|req: 24/24] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:57:42 2020] GET /video/ => generated 1771 bytes in 3 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 6014|app: 0|req: 25/25] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:57:56 2020] GET /video/ => generated 1743 bytes in 3 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 6014|app: 0|req: 26/26] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:57:58 2020] GET /video/ => generated 1743 bytes in 3 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Apr  1 18:58:02 2020] ***
+compiled with version: 7.3.0 on 23 February 2020 19:22:36
+os: Linux-4.15.0-20-generic #21-Ubuntu SMP Tue Apr 24 06:16:15 UTC 2018
+nodename: programmer-G56JR
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /home/programmer/Project/lorean
+detected binary path: /home/programmer/Project/venv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 47173
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /tmp/lorean.sock fd 3
+Python version: 3.6.8 (default, Oct  7 2019, 12:59:55)  [GCC 8.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55e90162a830
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72904 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55e90162a830 pid: 6731 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 6731, cores: 1)
+[pid: 6731|app: 0|req: 1/1] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:58:04 2020] GET /video/ => generated 1743 bytes in 22 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 6731|app: 0|req: 2/2] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:58:33 2020] GET /video/ => generated 1743 bytes in 3 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 6731|app: 0|req: 3/3] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:58:34 2020] GET /video/ => generated 1743 bytes in 4 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 6731|app: 0|req: 4/4] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:59:16 2020] GET /video/ => generated 1743 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 6731|app: 0|req: 5/5] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:59:27 2020] GET /video/ => generated 1743 bytes in 4 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 6731|app: 0|req: 6/6] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:59:47 2020] GET /video/ => generated 1743 bytes in 4 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 6731|app: 0|req: 7/7] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:59:48 2020] GET /video/ => generated 1743 bytes in 3 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 6731|app: 0|req: 8/8] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:59:50 2020] GET /video/ => generated 1743 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 6731|app: 0|req: 9/9] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 15:59:53 2020] GET /video/ => generated 1743 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 6731|app: 0|req: 10/10] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 16:00:17 2020] GET /video/ => generated 1743 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+Wed Apr  1 16:00:17 2020 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /favicon.ico (ip 127.0.0.1) !!!
+Wed Apr  1 16:00:17 2020 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /favicon.ico (127.0.0.1)
+OSError: write error
+[pid: 6731|app: 0|req: 11/11] 127.0.0.1 () {42 vars in 713 bytes} [Wed Apr  1 16:00:17 2020] GET /favicon.ico => generated 0 bytes in 5 msecs (HTTP/1.1 404) 4 headers in 0 bytes (0 switches on core 0)
+[pid: 6731|app: 0|req: 12/12] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 16:00:18 2020] GET /video/ => generated 1743 bytes in 3 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 6731|app: 0|req: 13/13] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 16:00:20 2020] GET /video/ => generated 1743 bytes in 4 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 6731|app: 0|req: 14/14] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 16:00:37 2020] GET /video/ => generated 1743 bytes in 4 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 6731|app: 0|req: 15/15] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 16:00:58 2020] GET /video/ => generated 1743 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 6731|app: 0|req: 16/16] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 16:01:10 2020] GET /video/ => generated 1743 bytes in 3 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+Wed Apr  1 16:01:10 2020 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /favicon.ico (ip 127.0.0.1) !!!
+Wed Apr  1 16:01:10 2020 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /favicon.ico (127.0.0.1)
+OSError: write error
+[pid: 6731|app: 0|req: 17/17] 127.0.0.1 () {42 vars in 713 bytes} [Wed Apr  1 16:01:10 2020] GET /favicon.ico => generated 0 bytes in 5 msecs (HTTP/1.1 404) 4 headers in 0 bytes (0 switches on core 0)
+[pid: 6731|app: 0|req: 18/18] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 16:01:13 2020] GET /video/ => generated 1743 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 6731|app: 0|req: 19/19] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 16:01:23 2020] GET /video/ => generated 1743 bytes in 3 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 6731|app: 0|req: 20/20] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 16:01:25 2020] GET /video/ => generated 1743 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 6731|app: 0|req: 21/21] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 16:01:29 2020] GET /video/ => generated 1743 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Apr  1 19:01:34 2020] ***
+compiled with version: 7.3.0 on 23 February 2020 19:22:36
+os: Linux-4.15.0-20-generic #21-Ubuntu SMP Tue Apr 24 06:16:15 UTC 2018
+nodename: programmer-G56JR
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /home/programmer/Project/lorean
+detected binary path: /home/programmer/Project/venv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 47173
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /tmp/lorean.sock fd 3
+Python version: 3.6.8 (default, Oct  7 2019, 12:59:55)  [GCC 8.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x558969351830
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72904 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x558969351830 pid: 7117 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 7117, cores: 1)
+[pid: 7117|app: 0|req: 1/1] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 16:01:38 2020] GET /video/ => generated 1743 bytes in 22 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 7117|app: 0|req: 2/2] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 16:01:40 2020] GET /video/ => generated 1743 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+Wed Apr  1 16:01:40 2020 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /favicon.ico (ip 127.0.0.1) !!!
+Wed Apr  1 16:01:40 2020 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /favicon.ico (127.0.0.1)
+OSError: write error
+[pid: 7117|app: 0|req: 3/3] 127.0.0.1 () {42 vars in 713 bytes} [Wed Apr  1 16:01:40 2020] GET /favicon.ico => generated 0 bytes in 6 msecs (HTTP/1.1 404) 4 headers in 0 bytes (0 switches on core 0)
+[pid: 7117|app: 0|req: 4/4] 127.0.0.1 () {42 vars in 755 bytes} [Wed Apr  1 16:01:49 2020] GET / => generated 1952 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 7117|app: 0|req: 5/5] 127.0.0.1 () {44 vars in 805 bytes} [Wed Apr  1 16:01:54 2020] GET /video/ => generated 1743 bytes in 3 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 7117|app: 0|req: 6/6] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 16:02:16 2020] GET /video/ => generated 1743 bytes in 6 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+Wed Apr  1 16:02:16 2020 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /favicon.ico (ip 127.0.0.1) !!!
+Wed Apr  1 16:02:16 2020 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /favicon.ico (127.0.0.1)
+OSError: write error
+[pid: 7117|app: 0|req: 7/7] 127.0.0.1 () {42 vars in 713 bytes} [Wed Apr  1 16:02:16 2020] GET /favicon.ico => generated 0 bytes in 3 msecs (HTTP/1.1 404) 4 headers in 0 bytes (0 switches on core 0)
+[pid: 7117|app: 0|req: 8/8] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 16:02:18 2020] GET /video/ => generated 1743 bytes in 3 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 7117|app: 0|req: 9/9] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 16:02:19 2020] GET /video/ => generated 1743 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 7117|app: 0|req: 10/10] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 16:02:21 2020] GET /video/ => generated 1743 bytes in 7 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 7117|app: 0|req: 11/11] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 16:02:22 2020] GET /video/ => generated 1743 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+Wed Apr  1 16:02:22 2020 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /favicon.ico (ip 127.0.0.1) !!!
+Wed Apr  1 16:02:22 2020 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /favicon.ico (127.0.0.1)
+OSError: write error
+[pid: 7117|app: 0|req: 12/12] 127.0.0.1 () {42 vars in 713 bytes} [Wed Apr  1 16:02:22 2020] GET /favicon.ico => generated 0 bytes in 4 msecs (HTTP/1.1 404) 4 headers in 0 bytes (0 switches on core 0)
+[pid: 7117|app: 0|req: 13/13] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 16:02:33 2020] GET /video/ => generated 1743 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 7117|app: 0|req: 14/14] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 16:02:35 2020] GET /video/ => generated 1743 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 7117|app: 0|req: 15/15] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 16:02:36 2020] GET /video/ => generated 1743 bytes in 3 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 7117|app: 0|req: 16/16] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 16:04:30 2020] GET /video/ => generated 1794 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 7117|app: 0|req: 17/17] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 16:04:31 2020] GET /video/ => generated 1794 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 7117|app: 0|req: 18/18] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 16:04:34 2020] GET /video/ => generated 1794 bytes in 6 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 7117|app: 0|req: 19/19] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 16:04:35 2020] GET /video/ => generated 1794 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 7117|app: 0|req: 20/20] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 16:05:02 2020] GET /video/ => generated 1790 bytes in 3 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+Wed Apr  1 16:05:02 2020 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /favicon.ico (ip 127.0.0.1) !!!
+Wed Apr  1 16:05:02 2020 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /favicon.ico (127.0.0.1)
+OSError: write error
+[pid: 7117|app: 0|req: 21/21] 127.0.0.1 () {42 vars in 713 bytes} [Wed Apr  1 16:05:02 2020] GET /favicon.ico => generated 0 bytes in 7 msecs (HTTP/1.1 404) 4 headers in 0 bytes (0 switches on core 0)
+[pid: 7117|app: 0|req: 22/22] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 16:05:41 2020] GET /video/ => generated 1790 bytes in 4 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 7117|app: 0|req: 23/23] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 16:05:42 2020] GET /video/ => generated 1790 bytes in 6 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 7117|app: 0|req: 24/24] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 16:05:44 2020] GET /video/ => generated 1790 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 7117|app: 0|req: 25/25] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 16:06:22 2020] GET /video/ => generated 1790 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 7117|app: 0|req: 26/26] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 16:06:24 2020] GET /video/ => generated 1790 bytes in 3 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+Wed Apr  1 16:06:24 2020 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /favicon.ico (ip 127.0.0.1) !!!
+Wed Apr  1 16:06:24 2020 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /favicon.ico (127.0.0.1)
+OSError: write error
+[pid: 7117|app: 0|req: 27/27] 127.0.0.1 () {42 vars in 713 bytes} [Wed Apr  1 16:06:24 2020] GET /favicon.ico => generated 0 bytes in 6 msecs (HTTP/1.1 404) 4 headers in 0 bytes (0 switches on core 0)
+[pid: 7117|app: 0|req: 28/28] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 16:06:36 2020] GET /video/ => generated 1790 bytes in 3 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 7117|app: 0|req: 29/29] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 16:06:37 2020] GET /video/ => generated 1790 bytes in 3 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 7117|app: 0|req: 30/30] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 16:06:55 2020] GET /video/ => generated 1805 bytes in 4 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 7117|app: 0|req: 31/31] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 16:06:57 2020] GET /video/ => generated 1805 bytes in 6 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 7117|app: 0|req: 32/32] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 16:06:58 2020] GET /video/ => generated 1805 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 7117|app: 0|req: 33/33] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 16:07:14 2020] GET /video/ => generated 1805 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 7117|app: 0|req: 34/34] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 16:07:16 2020] GET /video/ => generated 1805 bytes in 4 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 7117|app: 0|req: 35/35] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 16:07:17 2020] GET /video/ => generated 1805 bytes in 7 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 7117|app: 0|req: 36/36] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 16:07:43 2020] GET /video/ => generated 1779 bytes in 3 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 7117|app: 0|req: 37/37] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 16:07:44 2020] GET /video/ => generated 1779 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+Wed Apr  1 16:07:45 2020 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /favicon.ico (ip 127.0.0.1) !!!
+Wed Apr  1 16:07:45 2020 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /favicon.ico (127.0.0.1)
+OSError: write error
+[pid: 7117|app: 0|req: 38/38] 127.0.0.1 () {42 vars in 713 bytes} [Wed Apr  1 16:07:45 2020] GET /favicon.ico => generated 0 bytes in 4 msecs (HTTP/1.1 404) 4 headers in 0 bytes (0 switches on core 0)
+[pid: 7117|app: 0|req: 39/39] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 16:07:46 2020] GET /video/ => generated 1779 bytes in 3 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 7117|app: 0|req: 40/40] 127.0.0.1 () {46 vars in 836 bytes} [Wed Apr  1 16:07:58 2020] GET /video/ => generated 1771 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+Wed Apr  1 16:07:58 2020 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /favicon.ico (ip 127.0.0.1) !!!
+Wed Apr  1 16:07:58 2020 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /favicon.ico (127.0.0.1)
+OSError: write error
+[pid: 7117|app: 0|req: 41/41] 127.0.0.1 () {42 vars in 713 bytes} [Wed Apr  1 16:07:58 2020] GET /favicon.ico => generated 0 bytes in 10 msecs (HTTP/1.1 404) 4 headers in 0 bytes (0 switches on core 0)
