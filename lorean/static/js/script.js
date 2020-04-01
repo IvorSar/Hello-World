@@ -1,3 +1,3 @@
 
-var rere = "Django"
+//var rere = "Django"
 alert(rere)

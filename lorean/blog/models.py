@@ -1,6 +1,7 @@
 from django.db import models
 from django.utils import timezone
 from django.contrib.auth.models import User
+#from transliterate import translit
 
 class Post(models.Model):
 	STATUS_CHOICES = (
@@ -19,6 +20,17 @@ class Post(models.Model):
 
 	class Meta:
 		ordering = ('-publish',)
+
+	def __str__(self):
+		return self.title
+
+class Video(models.Model):
+	title = models.CharField(max_length = 250)
+	slug = models.SlugField(max_length = 250 )
+	publish = models.DateTimeField(default = timezone.now)
+	created = models.DateTimeField(auto_now_add = True)
+	updated = models.DateTimeField(auto_now = True)
+	video = models.FileField(upload_to="upload_location",blank=True,null=True)
 
 	def __str__(self):
 		return self.title

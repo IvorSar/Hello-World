@@ -6,21 +6,26 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content ="ie=edge">
-	<title>Document</title>
+	<title>
+		{% block title %}
+
+		{% endblock %}
+	</title>
 	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+	<link href="https://fonts.googleapis.com/css?family=Spicy+Rice&display=swap" rel="stylesheet"> 
 </head>
 <body>
 	<header>
 	<div class="conteiner">
-		<div class="body">
-			<img src="" alt="">
+		<div class="logo_cont">
+			<img src="{% static '../media/logo.jpg' %}" class="logo" alt="">
 			
 		</div>
 			<button class="conter_1">
-				<a href="#">Главная</a>
+				<a href="{% url 'lorean:base_start' %}">Главная</a>
 			</button>
 		<button class="conter_1">
-			<a href="#">Проекты</a>
+			<a href="">Видео</a>
 			
 		</button>
 		<button class="conter_1">
@@ -34,9 +39,40 @@
 		<button class="conter_1">
 			<a href="#">Портфолио</a>
 		</button>
-	</div>
+
 
 </header>
+    {% block sidebar %}
+	<div class="sidebar">
+		<div preload="auto" loop="loop" class="image">
+			<!--<img src="{% static '../media/123.jpg' %}"class ="picture" alt=""-->
+			<iframe width="1635" height="480" src="https://www.youtube.com/embed/rCrxn67XMlU?autoplay=1&amp;loop=10&amp;&amp;playlist=Video_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" loop="loop" preload="auto" class="picture" allowfullscreen></iframe>
+    </div>
+		<div class="conter_2">
+			<a href="{% url 'lorean:video' %}">Видео</a>
+		</div>
+		<div class="conter_2">
+			<a href="#">Интересное</a>
+		</div>
+		<div class="conter_2">
+			<a href="{% url 'lorean:foto_vision' %}">Фото-отчет</a>
+		</div>
+		<div class="conter_2">
+			<a href="#">Избранное</a>
+		</div>
+		<div class="conter_2">
+			<a href="#">Главные-статьи</a>
+		</div>
+		<div class="conter_2">
+			<a href="#">Страницы</a>
+		</div>
+
+        </div>
+   {% endblock %}
+ {% block content %}
+
+
+ {% endblock %}
 
 
 
