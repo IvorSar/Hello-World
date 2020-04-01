@@ -5,4 +5,6 @@
 *.pin
 *.pak
 *.pyc
-*.<iframe>
+*.html
+*.css
+*.js
